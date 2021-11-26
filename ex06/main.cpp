@@ -10,5 +10,5 @@ int	main(int argc, char **argv)
 		std::cout << "USAGE : ./karen [level]\n";
 		return 1;
 	}
-	karen.complain(argv[1]);
+	karen.filter(argv[1]);
 }

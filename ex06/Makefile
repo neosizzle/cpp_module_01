@@ -1,7 +1,7 @@
 SRCS = *.cpp
 OBJS = *.o 
 INCS = .
-NAME = karen
+NAME = karenFilter
 CC = c++ -Wall -Werror -Wextra -fsanitize=address
 
 all : ${NAME}
