@@ -1,7 +1,7 @@
 SRCS = *.cpp
 OBJS = *.o 
 INCS = .
-NAME = sed
+NAME = a.out
 CC = c++ -Wall -Werror -Wextra -fsanitize=address
 
 all : ${NAME}

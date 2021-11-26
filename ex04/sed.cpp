@@ -1,7 +1,7 @@
 #include <iostream>
 #include "main.hpp"
 
-void	sed(std::string content, std::string s1, std::string s2)
+std::string	sed(std::string content, std::string s1, std::string s2)
 {
 	std::string result;
 	std::string left;
@@ -25,8 +25,6 @@ void	sed(std::string content, std::string s1, std::string s2)
 		pos += s2len;
 		pos = content.find(s1, pos);
 	}
-	std::cout << content << "\n";
-	// std::cout << content << "\n";
-	// std::cout << s1 << "\n";
-	// std::cout << s2 << "\n";
+
+	return (content);
 }

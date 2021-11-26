@@ -29,15 +29,25 @@ std::string	read_file(int argc, char **argv)
 	return content;
 }
 
+void	write_file(std::string content, std::string name)
+{
+	std::ofstream newFile(name + ".replace");
+
+	newFile << content;
+	newFile.close();
+}
+
 int	main(int argc, char **argv)
 {
 	std::string	content;
+	std::string processed_content;
 	std::string	s1;
 	std::string	s2;
 
 	content = read_file(argc, argv);
 	s1 = argv[2];
 	s2 = argv[3];
-	sed(content, s1, s2);
+	processed_content = sed(content, s1, s2);
+	write_file(processed_content, argv[1]);
 	return 0;
 }
