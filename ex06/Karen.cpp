@@ -42,13 +42,13 @@ void	Karen::filter(std::string level)
 	{
 		case 3:
 			Karen::debug();
-			[[fallthrough]];
+			//fall through
 		case 2:
 			Karen::info();
-			[[fallthrough]];
+			//fall through
 		case 1:
 			Karen::warning();
-			[[fallthrough]];
+			//fall through
 		case 0:
 			Karen::error();	
 			break;
